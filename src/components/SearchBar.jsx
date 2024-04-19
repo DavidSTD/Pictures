@@ -18,13 +18,13 @@ function SearchBar({ onSubmit }){
         onSubmit(term)
     }
     return(
-        <div>
-            <h1>Search Bar:</h1>
+        <div className="search-bar">
+            
             <form onSubmit={handleFormSubmit}>
-                Confirma tu busqueda: {term}
+              <label htmlFor="">Picture search</label>
                 <input onChange={handleChange} value={term} />
             </form>
-            <button onClick={handleClick}>Click Me!</button>
+            
         </div>
     )
 }
